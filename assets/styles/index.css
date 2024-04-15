@@ -38,6 +38,8 @@
   --size-100: 6.4rem;
   --size-110: 7rem;
   --size-120: 7.6rem;
+
+  --max-width: 1136px;
 }
 
 * {
@@ -53,10 +55,4 @@ html {
 
 body {
   background: var(--gray-200);
-}
-
-#root {
-  width: 100%;
-  max-width: 1136px;
-  margin: 0 auto;
 }

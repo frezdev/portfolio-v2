@@ -4,6 +4,8 @@
   gap: var(--spacing-30);
   justify-content: space-between;
   margin-block: var(--spacing-50);
+  margin-inline: auto;
+  max-width: var(--max-width);
 }
 
 .hero__info {
