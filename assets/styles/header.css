@@ -1,0 +1,29 @@
+.header {
+  width: 100%;
+  padding-block: var(--spacing-30);
+
+  & .header__nav {
+    display: flex;
+    justify-content: space-between;
+
+    & .header__nav-section {
+      display: flex;
+      color: var(--black-100);
+      font-size: var(--size-20);
+      align-items: center;
+
+      &.header__nav-section--left {
+        font-weight: bold;
+        gap: var(--spacing-10);
+      }
+      &.header__nav-section--right {
+        gap: var(--spacing-30);
+        list-style: none;
+        & a {
+          padding: 2px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
