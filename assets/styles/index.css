@@ -8,16 +8,39 @@
 }
 
 :root {
+
+  /* COLORS */
   --white: #ffffff;
   --gray-100: #EDEDED;
   --blue-10: #EAF2FD;
   --blue-100: #2A7AE4;
   --black-100: #464646;
+
+  /* SPACING */
+  --spacing-10: 0.8rem;
+  --spacing-20: 1.6rem;
+  --spacing-30: 2.4rem;
+
+
+  /* SIZES */
+  --size-10: 0.8rem;
+  --size-20: 1.6rem;
+  --size-30: 2.4rem;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
   font-family: 'Raleway', sans-serif;
+}
+
+#root {
+  width: 100%;
+  max-width: 1136px;
+  margin: 0 auto;
 }
