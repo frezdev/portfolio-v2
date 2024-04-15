@@ -1,3 +1,4 @@
+/* HERO SECTION */
 .hero {
   display: flex;
   align-items: center;
@@ -57,5 +58,35 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     width: 100%;
+  }
+}
+
+/* ABOUT ME SECTION */
+
+.about {
+  background: var(--blue-10);
+  width: 100%;
+}
+.about-container {
+  padding-block: var(--spacing-100);
+  max-width: var(--max-width);
+  margin-inline: auto;
+
+  & .about-container__info {
+    color: var(--black-100);
+    max-width: 751px;
+    display: grid;
+    gap: var(--spacing-20);
+
+    & .about-container__info--title {
+      font-size: var(--size-40);
+      font-weight: bold;
+    }
+
+    & .about-container__info--description {
+      font-size: var(--size-20);
+      letter-spacing: 1px;
+      line-height: 1.3;
+    }
   }
 }
