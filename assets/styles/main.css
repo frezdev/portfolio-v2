@@ -113,6 +113,7 @@
 
       & .skills-container__skills--item {
         background: var(--white);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         display: grid;
         border-radius: var(--size-10);
         gap: var(--spacing-20);
