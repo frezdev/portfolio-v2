@@ -12,6 +12,7 @@
   /* COLORS */
   --white: #ffffff;
   --gray-100: #EDEDED;
+  --gray-200: #F5F5F5;
   --blue-10: #EAF2FD;
   --blue-100: #2A7AE4;
   --black-100: #464646;
@@ -20,12 +21,23 @@
   --spacing-10: 0.8rem;
   --spacing-20: 1.6rem;
   --spacing-30: 2.4rem;
+  --spacing-40: 3rem;
+  --spacing-50: 3.6rem;
 
 
   /* SIZES */
   --size-10: 0.8rem;
   --size-20: 1.6rem;
-  --size-30: 2.4rem;
+  --size-30: 2.2rem;
+  --size-40: 3rem;
+  --size-50: 3.6rem;
+  --size-60: 4rem;
+  --size-70: 4.6rem;
+  --size-80: 5.2rem;
+  --size-90: 5.8rem;
+  --size-100: 6.4rem;
+  --size-110: 7rem;
+  --size-120: 7.6rem;
 }
 
 * {
@@ -37,6 +49,10 @@
 html {
   font-size: 62.5%;
   font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: var(--gray-200);
 }
 
 #root {
