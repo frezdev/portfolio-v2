@@ -57,3 +57,7 @@ html {
 body {
   background: var(--gray-200);
 }
+
+.container {
+  padding-inline: var(--spacing-30);
+}

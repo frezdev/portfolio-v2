@@ -90,3 +90,44 @@
     }
   }
 }
+
+/* SKILLS SECTION */
+.skills {
+  padding-block: var(--spacing-40);
+
+  .skills-container {
+    max-width: var(--max-width);
+    margin-inline: auto;
+
+    & .skills-container__title {
+      font-size: var(--size-40);
+      color: var(--black-100);
+      font-weight: bold;
+      text-align: center;
+    }
+    & .skills-container__skills {
+      display: grid;
+      gap: var(--spacing-20);
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      margin-top: var(--spacing-40);
+
+      & .skills-container__skills--item {
+        background: var(--white);
+        display: grid;
+        border-radius: var(--size-10);
+        gap: var(--spacing-20);
+        aspect-ratio: 1 / 1;
+        align-content: center;
+        justify-items: center;
+
+        & img {
+          height: 70px;
+        }
+        & p {
+          font-size: var(--size-20);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
