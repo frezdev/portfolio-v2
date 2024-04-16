@@ -63,3 +63,15 @@ body {
 .container {
   padding-inline: var(--spacing-20);
 }
+
+@media (min-width: 550px) {
+  .container {
+    padding-inline: var(--spacing-30);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: var(--spacing-50);
+  }
+}
