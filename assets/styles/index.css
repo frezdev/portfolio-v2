@@ -41,6 +41,8 @@
   --size-120: 7.6rem;
 
   --max-width: 1136px;
+
+  --table-width: 768px;
 }
 
 * {
@@ -59,5 +61,5 @@ body {
 }
 
 .container {
-  padding-inline: var(--spacing-30);
+  padding-inline: var(--spacing-20);
 }
