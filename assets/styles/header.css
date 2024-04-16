@@ -1,31 +1,114 @@
 .header {
   width: 100%;
-  padding-block: var(--spacing-30);
+  padding-block: var(--spacing-20);
   max-width: var(--max-width);
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 
-  & .header__nav {
+  & .header-flex-container {
     display: flex;
-    justify-content: space-between;
+    color: var(--black-100);
+    font-size: var(--size-20);
+    align-items: center;
+  }
 
-    & .header__nav-section {
-      display: flex;
-      color: var(--black-100);
-      font-size: var(--size-20);
-      align-items: center;
+  & .header-button {
+    & button {
+      cursor: pointer;
+    }
+  }
+}
 
-      &.header__nav-section--left {
-        font-weight: bold;
-        gap: var(--spacing-10);
-      }
-      &.header__nav-section--right {
-        gap: var(--spacing-30);
-        list-style: none;
-        & a {
-          padding: 2px;
-          font-weight: 500;
+.header__title-container {
+  font-weight: bold;
+  text-wrap: nowrap;
+  gap: var(--spacing-10);
+}
+
+.header__nav-mobile {
+  height: 100dvh;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0%;
+  width: 80%;
+  max-width: 360px;
+  padding: var(--spacing-20);
+  background: var(--gray-200);
+  box-shadow: -13px 0px 15px rgb(0 0 0 /0.2);
+  transition: .3s;
+
+  &.hidden-menu {
+    right: -100%;
+  }
+
+  & .close-button-container {
+    justify-content: end;
+    display: flex;
+  }
+  & .header__nav-mobile--container {
+    color: var(--black-100);
+    font-size: var(--size-30);
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+
+    & > li {
+      & > a {
+        padding: 8px;
+        font-weight: 500;
+        &:hover {
+          text-decoration: underline  ;
         }
       }
+    }
+  }
+}
+.header__nav-desktop {
+  display: none;
+}
+.header__nav-section {
+  gap: var(--spacing-30);
+  list-style: none;
+
+  & > li {
+    & > a {
+      padding: 2px;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline  ;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+  .header {
+    
+  }
+}
+
+@media (min-width: 980px) {
+  .header {
+    padding-block: var(--spacing-30);
+
+    & .header__nav-desktop {
+      display: block;
+    }
+    & .header__nav-mobile {
+      display: none;
+    }
+
+    & .hamburger-button-container {
+      display: none;
     }
   }
 }

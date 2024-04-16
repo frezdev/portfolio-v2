@@ -26,19 +26,19 @@
   <link rel="stylesheet" href="./assets/styles/index.css" />
   <link rel="stylesheet" href="./assets/styles/header.css" />
   <link rel="stylesheet" href="./assets/styles/main.css" />
+  <script defer src="./assets/scripts/index.js"></script>
   <title>Carlos Florez</title>
 </head>
 
 <body>
   <header class="header container">
-    <nav class="header__nav">
-      <div class="header__nav-section header__nav-section--left">
-        <img src="./assets/icons/logo.svg"
-          alt="Logo de una estrella estrella de cuatro puntas junto a dos estrellas mas pequeñas" />
-        <h2>Carlos Florez</h2>
-      </div>
-
-      <ul class="header__nav-section header__nav-section--right">
+    <div class="header__title-container header-flex-container">
+      <img src="./assets/icons/logo.svg"
+        alt="Logo de una estrella estrella de cuatro puntas junto a dos estrellas mas pequeñas" />
+      <h2>Carlos Florez</h2>
+    </div>
+    <nav class="header__nav-desktop">
+      <ul class="header-flex-container header__nav-section">
         <li><a href="#about-me">Sobre mí</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#hobbies">Hobbies</a></li>
@@ -47,6 +47,34 @@
         <li><a href="#contact">Contacto</a></li>
       </ul>
     </nav>
+
+    <nav id="mobileMenu" class="header__nav-mobile hidden-menu">
+      <div class="close-button-container header-button">
+        <button id="closeMenuButton">
+          <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.11279 18L18 2.00031" stroke="#464646" stroke-width="3" stroke-linecap="round" />
+            <path d="M17.8872 17.9998L1.99998 2.00003" stroke="#464646" stroke-width="3" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <ul id="menuItemsContainer" class="header__nav-mobile--container">
+        <li><a href="#about-me">Sobre mí</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger-button-container header-button">
+      <button id="openMenuButton">
+        <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 10H18" stroke="#464646" stroke-width="3" stroke-linecap="round" />
+          <path d="M2 2H18" stroke="#464646" stroke-width="3" stroke-linecap="round" />
+          <path d="M2 18H18" stroke="#464646" stroke-width="3" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
   </header>
   <main>
     <section class="hero container">
