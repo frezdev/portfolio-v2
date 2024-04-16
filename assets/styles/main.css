@@ -113,7 +113,7 @@
     & .skills-container__skills {
       display: grid;
       gap: var(--spacing-20);
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
       margin-top: var(--spacing-40);
 
       & .skills-container__skills--item {
@@ -156,6 +156,14 @@
   .hero__image {
     height: 260px;
     min-width: 260px;
+  }
+
+  .skills {
+    .skills-container {
+      & .skills-container__skills {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      }
+    }
   }
 }
 
