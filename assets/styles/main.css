@@ -141,6 +141,7 @@
 @media screen and (min-width: 700px) {
   .hero {
     flex-direction: row;
+    align-items: center;
   }
 
   .hero__info {
