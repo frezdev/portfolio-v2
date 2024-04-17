@@ -73,7 +73,7 @@
   width: 100%;
 }
 .about-container {
-  padding-block: var(--spacing-100);
+  padding-block: var(--spacing-30);
   max-width: var(--max-width);
   margin-inline: auto;
 
@@ -84,8 +84,7 @@
     gap: var(--spacing-20);
 
     & .about-container__info--title {
-      font-size: var(--size-40);
-      font-weight: bold;
+      text-align: start;
     }
 
     & .about-container__info--description {
@@ -96,6 +95,13 @@
   }
 }
 
+.section-title {
+  font-size: var(--size-30);
+  color: var(--black-100);
+  font-weight: bold;
+  text-align: center;
+}
+
 /* SKILLS SECTION */
 .skills {
   padding-block: var(--spacing-40);
@@ -104,12 +110,6 @@
     max-width: var(--max-width);
     margin-inline: auto;
 
-    & .skills-container__title {
-      font-size: var(--size-40);
-      color: var(--black-100);
-      font-weight: bold;
-      text-align: center;
-    }
     & .skills-container__skills {
       display: grid;
       gap: var(--spacing-20);
@@ -124,7 +124,6 @@
         padding: var(--spacing-20);
         border-radius: var(--size-10);
         gap: var(--spacing-20);
-        aspect-ratio: 1 / 1;
         align-content: center;
         justify-items: center;
 
@@ -178,6 +177,59 @@
   }
 }
 
+/* FORMACIÓN ACADÉMICA */
+.formacion {
+  padding-block: var(--spacing-40);
+  background: var(--blue-10);
+
+  & .formacion-container {
+    max-width: var(--max-width);
+    margin-inline: auto;
+  }
+}
+
+.formacion-container__items-container {
+  margin-top: var(--spacing-40);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  justify-items: center;
+  gap: var(--spacing-20);
+
+  & .formacion__item {
+    width: 100%;
+    display: inherit;
+    gap: var(--spacing-10);
+
+    & .formacion__item--image-container {
+      background: var(--white);
+      display: grid;
+      place-items: center;
+      height: 155px;
+
+      & img {
+        width: 40%;
+      }
+    }
+
+    & .formacion__item--info {
+      display: grid;
+      gap: var(--spacing-10);
+      color: var(--black-100);
+
+      & h3 {
+        font-size: var(--size-20);
+        font-weight: bold;
+      }
+
+      & p {
+        font-size: 14px;
+
+      }
+    }
+  }
+}
+
+
 @media screen and (min-width: 1000px) {
   .hero__info {
     & .hero__info--title {
@@ -191,5 +243,36 @@
   .hero__image {
     height: 368px;
     min-width: 368px;
+  }
+
+  .formacion {
+    padding-block: var(--spacing-100);
+  }
+
+  .formacion-container__items-container {
+    margin-top: var(--spacing-40);
+    & .formacion__item {
+      & .formacion__item--image-container {
+        width: 100%;
+        height: 230px;
+        & img {
+          width: 40%;
+        }
+      }
+
+      & .formacion__item--info {
+        display: grid;
+        gap: var(--spacing-10);
+        color: var(--black-100);
+
+        & h3 {
+          font-size: var(--size-30);
+        }
+
+        & p {
+          font-size: var(--size-20);
+        }
+      }
+    }
   }
 }
