@@ -421,6 +421,14 @@
   }
 }
 
+footer {
+  padding: var(--size-40);
+  text-align: center;
+  font-size: var(--size-20);
+  color: var(--black-100);
+  line-height: 1.3;
+}
+
 
 
 
