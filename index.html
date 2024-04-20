@@ -26,7 +26,6 @@
   <link rel="stylesheet" href="./assets/styles/index.css" />
   <link rel="stylesheet" href="./assets/styles/header.css" />
   <link rel="stylesheet" href="./assets/styles/main.css" />
-  <script defer src="./assets/scripts/index.js"></script>
   <title>Carlos Florez</title>
 </head>
 
@@ -351,20 +350,24 @@
           <form class="contact-form" action="" method="post" id="form">
             <div class="contact-form__group">
               <input type="text" name="" id="name" required>
+              <span class="input-error-message"></span>
               <label for="name">Nombre</label>
             </div>
             <div class="contact-form__group">
-              <input type="email" name="" id="email" required>
+              <input class="input-form" type="text" name="" id="email" required>
+              <span class="input-error-message"></span>
               <label for="email">Email</label>
             </div>
             <div class="contact-form__group">
               <input type="text" name="" id="subject" required>
+              <span class="input-error-message"></span>
               <label for="subject">Asunto</label>
             </div>
             <div class="contact-form__group">
               <textarea name="" placeholder="Mensaje" id="message" required></textarea>
+              <span class="input-error-message"></span>
             </div>
-            <button class="submit-btn">Enviar mensaje</button>
+            <button class="submit-btn" id="btnSubmit" disabled>Enviar mensaje</button>
           </form>
         </div>
       </div>
@@ -374,6 +377,8 @@
     Desarrollado por Carlos Florez<br />
     2024
   </footer>
+  <script defer src="./assets/scripts/index.js"></script>
+  <script defer src="./assets/scripts/validations.js"></script>
 </body>
 
 </html>
